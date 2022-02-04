@@ -1,4 +1,4 @@
-name: Assignment-1
+name: Assignment1
 on: push
 jobs:
   build:
