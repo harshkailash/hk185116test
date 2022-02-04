@@ -9,7 +9,7 @@ jobs:
     - run: |
         ./hello.ps1
     - name : Zip artifacts
-    - run : |
+      run : |
         Set-Variable -Name build_version -Value "testing.${{ github.run_number }}.zip"
         Compress-Archive /a -DestinationPath .\$build_version
         ls
